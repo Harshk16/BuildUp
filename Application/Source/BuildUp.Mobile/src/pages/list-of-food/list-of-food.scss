@@ -1,0 +1,30 @@
+page-list-of-food {
+    .food-list {
+        div {
+            margin-bottom: 10px; // font-weight: bolder;
+        }
+        span {
+            margin-right: 1.5px
+        }
+        .label-md {
+            margin: 0
+        }
+        .label-ios {
+            margin: 0
+        }
+    } //IOS
+    .ios {
+        .label-ios {
+            margin: 0%
+        }
+    }
+    .android {
+        .label-md {
+            margin: 0%
+        }
+    }
+    ion-icon {
+        display: inline-block;
+        font-size: 2.0em;
+    }
+}

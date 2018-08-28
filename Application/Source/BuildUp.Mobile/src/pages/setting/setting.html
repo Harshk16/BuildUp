@@ -1,0 +1,163 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>My Setting</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="userDetails()">
+					<ion-icon name="open"></ion-icon>
+				</button>
+        </ion-buttons>
+    </ion-navbar>
+
+    <!-- <ion-segment [(ngModel)]="tabs" color="settings-header">
+
+        <ion-segment-button value="general">
+            General
+        </ion-segment-button>
+
+        <ion-segment-button value="privacy">
+            Privacy
+        </ion-segment-button>
+
+    </ion-segment> -->
+
+</ion-header>
+
+<ion-content>
+    <!-- <div [ngSwitch]="tabs">
+        <ion-list *ngSwitchCase="'general'" ngSelected="selected">
+            <ion-item class="user-img" no-lines>
+                <ion-avatar item-start>
+                    <img src="../../assets/imgs/Food.png" />
+                </ion-avatar>
+                <h2 class="boldfontfamily header-text longer-text">Harsh</h2>
+                <p class="location">
+                    <ion-icon name="mail"></ion-icon>
+                    <span style="font-weight:bold;font-family:rubikblack">h@gmail.com</span>
+                </p>
+                <p class="location">
+                    <ion-icon name="call"></ion-icon>
+                    <span style="font-weight:bold;font-family:rubikblack">123456789</span>
+                </p>
+                <p class="location">
+                    <ion-icon name="pin"></ion-icon>
+                    <span style="font-weight:bold;font-family:rubikblack">Bangalore</span>
+                    <span>Karanataka</span>
+                </p>
+
+            </ion-item>
+
+        </ion-list>
+        <ion-list *ngSwitchCase="'privacy'" ngSelected="selected">
+
+        </ion-list>
+
+        <div padding *ngSwitchCase="'privacy'">
+
+        </div>
+    </div> -->
+    <div style="height: 40%;" class="first-half">
+        <div>
+            <ion-label class="text" text-center>Harsh</ion-label>
+            <ion-avatar item-center text-center>
+                <img src="../../assets/imgs/profile.png" />
+            </ion-avatar>
+        </div>
+        <ion-grid>
+            <ion-row>
+                <ion-col style="background-color: red;">
+                    1
+                </ion-col>
+                <ion-col style="background-color: purple">
+                    2
+                </ion-col>
+                <ion-col col->
+                    3
+                </ion-col>
+            </ion-row>
+            <!-- <ion-row col-4>
+                <ion-col col-4>
+                    2
+                </ion-col>
+            </ion-row>
+            <ion-row col-4>
+                <ion-col col-4>
+                    2
+                </ion-col>
+            </ion-row> -->
+
+        </ion-grid>
+
+    </div>
+    <div style="height: 60%;">
+        <button ion-button full outline (click)="showHideButtons()">
+				<ion-icon name="star"></ion-icon>
+				Notification
+		</button>
+        <ion-list *ngIf="this.chooseTypeClicked === true">
+
+            <ion-item>
+                <ion-label>Pepperoni</ion-label>
+                <ion-toggle></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Sausage</ion-label>
+                <ion-toggle disabled="true"></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Mushrooms</ion-label>
+                <ion-toggle></ion-toggle>
+            </ion-item>
+
+        </ion-list>
+
+        <button ion-button full outline (click)="showHideButtons()">
+				<ion-icon name="star"></ion-icon>
+				Account Setting
+		</button>
+        <ion-list *ngIf="this.chooseTypeClicked === true">
+
+            <ion-item>
+                <ion-label>Pepperoni</ion-label>
+                <ion-toggle></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Sausage</ion-label>
+                <ion-toggle disabled="true"></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Mushrooms</ion-label>
+                <ion-toggle></ion-toggle>
+            </ion-item>
+
+        </ion-list>
+
+        <button ion-button full outline (click)="showHideButtons()">
+				<ion-icon name="star"></ion-icon>
+				Privacy
+		</button>
+        <ion-list *ngIf="this.chooseTypeClicked === true">
+
+            <ion-item>
+                <ion-label>Pepperoni</ion-label>
+                <ion-toggle></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Sausage</ion-label>
+                <ion-toggle disabled="true"></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Mushrooms</ion-label>
+                <ion-toggle></ion-toggle>
+            </ion-item>
+
+        </ion-list>
+
+    </div>
+</ion-content>

@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="openSetting()">
+				<ion-icon name="cc-icon-profile"></ion-icon>
+			</button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-item>
+            <ion-label>Date</ion-label>
+            <ion-datetime item-center displayFormat="MMM/D/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <div class="circle" item-start>
+                <img src="assets/icons/icon_diet.svg">
+            </div>
+            <span>
+				<label> 300 out of 1900 eaten</label>
+			</span>
+            <span item-end>
+				<ion-icon height="20" item-width="20" name="add" color="red" (click)="presentActionSheet()"></ion-icon>
+			</span>
+        </ion-item>
+
+        <ion-item>
+            <div class="circle" item-start>
+                <img src="assets/icons/icon_water.svg">
+            </div>
+            <span>
+				<label> 300 out of 1900 eaten</label>
+				</span>
+            <span item-end>
+				<ion-icon height="20" item-width="20" color="blue" name="add" (click)="addWater()"></ion-icon>
+			</span>
+        </ion-item>
+
+        <ion-item>
+            <div class="circle" item-start>
+                <img src="assets/icons/icon_bicycle-rider.svg">
+            </div>
+            <span>
+				<label> 300 out of 1900 eaten</label>
+			</span>
+            <span item-end>
+				<ion-icon height="20" color="blue" item-width="20" color="purple" name="add"></ion-icon>
+			</span>
+        </ion-item>
+    </ion-card>
+</ion-content>

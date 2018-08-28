@@ -1,0 +1,20 @@
+page-setting {
+    .first-half {
+        // background-color: aquamarine;
+        .text {
+            text-align: center !important;
+            font-weight: bolder;
+            margin: 10px;
+        }
+    }
+    ion-avatar img {
+        margin: auto;
+        width: 30% !important;
+        height: 30% !important;
+        border-radius: 50%;
+        border: 1px solid #222;
+    }
+    .grid {
+        height: 35%;
+    }
+}

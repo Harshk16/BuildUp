@@ -1,0 +1,27 @@
+page-home {
+    div.circle {
+        width: 45px !important;
+        height: 45px !important;
+        border: 1px solid #666;
+        border-radius: 50%;
+        align-items: center;
+    }
+    .circle img {
+        padding: 8px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    ion-icon {
+        display: inline-block;
+        font-size: 1.7em;
+        font-weight: bolder;
+    }
+    .ion-icon {
+        color: blue !important;
+    }
+    .card-md {
+        margin: 0;
+        border-radius: 11px;
+        width: 100%;
+    }
+}

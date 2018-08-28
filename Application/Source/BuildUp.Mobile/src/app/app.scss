@@ -1,0 +1,84 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@import "./../theme/variables";
+ion-icon {
+    &[class*="cc-icon"] {
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 1em;
+        height: 1em;
+    }
+    &[class*="cc-icon-diet-plan"] {
+        mask-image: url('../assets/icons/icon_diet.svg');
+    }
+    &[class*="cc-icon-gym"] {
+        mask-image: url('../assets/icons/icon_gym.svg');
+    }
+    &[class*="cc-icon-calorie-cal"] {
+        mask-image: url('../assets/icons/icon_calorie_calculator.svg');
+    }
+    &[class*="cc-icon-bicycle-rider"] {
+        mask-image: url('../assets/icons/icon_bicycle-rider.svg');
+    }
+    &[class*="cc-icon-water"] {
+        mask-image: url('../assets/icons/icon_water.svg');
+    }
+    &[class*="cc-icon-breakfast"] {
+        mask-image: url('../assets/icons/icon_breakfast.svg');
+    }
+    &[class*="cc-icon-snacks"] {
+        mask-image: url('../assets/icons/icon_hot-coffee-cup.svg');
+    }
+    &[class*="cc-icon-lunch"] {
+        mask-image: url('../assets/icons/icon_lunch.svg');
+    }
+    &[class*="cc-icon-dinner"] {
+        mask-image: url('../assets/icons/icon_dinner.svg');
+    }
+    &[class*="cc-icon-cancel"] {
+        mask-image: url('../assets/icons/icon_cancel.svg');
+    }
+    &[class*="cc-icon-cancel_border"] {
+        mask-image: url('../assets/icons/icon_cancel_border.svg');
+    }
+    &[class*="cc-icon-hungry"] {
+        mask-image: url('../assets/icons/icon_hungry.svg');
+    }
+    &[class*="cc-icon-profile"] {
+        mask-image: url('../assets/icons/icon_profile.svg');
+    }
+    &[class*="cc-icon-logout"] {
+        mask-image: url('../assets/icons/icon_logout.svg');
+    }
+    &[class*="cc-icon-edit"] {
+        mask-image: url('../assets/icons/icon_edit.svg');
+    }
+    .tabs-md .tab-button-text {
+        font-weight: bolder;
+        color: blue;
+    }
+    .modal-back-button {
+        .back-button {
+            display: block !important
+        }
+    } //longer text add dot dot
+    .longer-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

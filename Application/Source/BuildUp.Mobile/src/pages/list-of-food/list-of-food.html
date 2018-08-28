@@ -1,0 +1,48 @@
+<ion-header>
+
+    <ion-navbar class="modal-back-button">
+        <ion-title>Select Food</ion-title>
+        <!-- <ion-buttons left>
+            <button navPop ion-button icon-only>
+				<ion-icon color="black" name="arrow-back"></ion-icon>
+			</button>
+        </ion-buttons> -->
+        <!-- <ion-buttons end>
+            <button ion-button>
+				Add
+			</button>
+        </ion-buttons> -->
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+    <ion-grid>
+        <!-- Row 2 Scrollable list -->
+        <ion-row>
+            <ion-col>
+                <ion-searchbar></ion-searchbar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="food-list">
+                <ion-scroll style="width:100%;height:100vh" scrollY="true">
+                    <ion-list scroll="true">
+                        <ion-item *ngFor="let item of foodList" (click)="openFoodDetail(item)">
+                            <div style="font-weight: bolder">{{item.name}}</div>
+                            <span><strong>P -</strong> {{item.Protein}}, </span>
+                            <span><strong>Cal -</strong> {{item.Calories}}, </span>
+                            <span><strong>Fats -</strong> {{item.Fats}}, </span>
+                            <span><strong>Fiber -</strong> {{item.Fibers}} </span>
+                            <span item-end>
+									<ion-icon height="20" item-width="20" name="star-outline" color="red"></ion-icon>
+							</span>
+                        </ion-item>
+                    </ion-list>
+                </ion-scroll>
+
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

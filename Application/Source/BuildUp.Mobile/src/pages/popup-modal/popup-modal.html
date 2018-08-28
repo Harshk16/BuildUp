@@ -1,0 +1,25 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>popup-modal</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="align-text-center">
+        <label id="title" style="font-weight: bold; font-size: 20px;">{{title}}</label>
+        <br>
+        <img height="150" class="margin" item-width="300" src={{image}}>
+        <br>
+        <label>{{content}}</label>
+        <br>
+
+
+
+
+        <button ion-button class="ok-button" (click)="closeModal()">OK</button>
+    </div>
+
+</ion-content>
